@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dynamic calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <div id="root">
+
+
+    </div>
+    <script>
+        const root = document.getElementById("root");
+        let counter = 0;
+
+
+
+        const displayElement = document.createElement("p");
+        displayElement.innerHTML = counter;
+        root.appendChild(displayElement);
+
+
+        const zeroButton = document.createElement("button");
+        zeroButton.innerHTML = "0";
+        zeroButton.addEventListener("click", () => {
+            counter = zeroButton.innerHTML;
+            displayElement.innerHTML += counter;
+        });
+        root.appendChild(zeroButton);
+
+        const decrementBtn = document.createElement("button");
+        decrementBtn.innerHTML = "1";
+        decrementBtn.addEventListener("click", () => {
+            counter = decrementBtn.innerHTML;
+            displayElement.innerHTML += counter;
+        });
+        root.appendChild(decrementBtn);
+
+        const incrementBtn = document.createElement("button");
+        incrementBtn.innerHTML = "2";
+        incrementBtn.addEventListener("click", () => {
+            counter = incrementBtn.innerHTML;
+            displayElement.innerHTML += counter;
+        });
+        root.appendChild(incrementBtn);
+
+        const threeBtn = document.createElement("button");
+        threeBtn.innerHTML = "3";
+        threeBtn.addEventListener("click", () => {
+            counter = threeBtn.innerHTML;
+            displayElement.innerHTML += counter;
+        });
+        root.appendChild(threeBtn);
+
+        const br1 = document.createElement("br");
+        root.appendChild(br1);
+
+        const fourBtn = document.createElement("button");
+        fourBtn.innerHTML = "4";
+        fourBtn.addEventListener("click", () => {
+            counter = fourBtn.innerHTML;
+            displayElement.innerHTML += counter;
+        });
+        root.appendChild(fourBtn);
+
+        const fiveBtn = document.createElement("button");
+        fiveBtn.innerHTML = "5";
+        fiveBtn.addEventListener("click", () => {
+            counter = fiveBtn.innerHTML;
+            displayElement.innerHTML += counter;
+        });
+        root.appendChild(fiveBtn);
+
+        const sixBtn = document.createElement("button");
+        sixBtn.innerHTML = "6";
+        sixBtn.addEventListener("click", () => {
+            counter = sixBtn.innerHTML;
+            displayElement.innerHTML += counter;
+        });
+        root.appendChild(sixBtn);
+
+        const sevenBtn = document.createElement("button");
+        sevenBtn.innerHTML = "7";
+        sevenBtn.addEventListener("click", () => {
+            counter = sevenBtn.innerHTML;
+            displayElement.innerHTML += counter;
+        });
+        root.appendChild(sevenBtn);
+
+        const br2 = document.createElement("br");
+        root.appendChild(br2);
+
+
+        const eightBtn = document.createElement("button");
+        eightBtn.innerHTML = "8";
+        eightBtn.addEventListener("click", () => {
+            counter = eightBtn.innerHTML;
+            displayElement.innerHTML += counter;
+        });
+        root.appendChild(eightBtn);
+
+        const nineBtn = document.createElement("button");
+        nineBtn.innerHTML = "9";
+        nineBtn.addEventListener("click", () => {
+            counter = nineBtn.innerHTML;
+            displayElement.innerHTML += counter;
+        });
+        root.appendChild(nineBtn);
+
+
+        const dotButton = document.createElement("button");
+        dotButton.innerHTML = ".";
+        dotButton.addEventListener("click", () => {
+            counter = dotButton.innerHTML;
+            displayElement.innerHTML += counter;
+        });
+        root.appendChild(dotButton);
+
+        const equalto = document.createElement("button");
+        equalto.innerHTML = "=";
+        equalto.addEventListener("click", () => {
+
+            displayElement.innerHTML = eval(displayElement.innerHTML);
+        });
+        root.appendChild(equalto);
+
+
+        const  = document.createElement("button");
+        equalto.innerHTML = "=";
+        equalto.addEventListener("click", () => {
+
+            displayElement.innerHTML = eval(displayElement.innerHTML);
+        });
+        root.appendChild(equalto);
+
+    </script>
+</body>
+
+</html>

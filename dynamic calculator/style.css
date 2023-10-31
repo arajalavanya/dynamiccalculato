@@ -1,0 +1,18 @@
+p {
+    border: 1px solid black;
+    padding: 32px;
+    font-size: xx-large;
+    text-align: end;
+    color: white;
+    background-color: lightgray;
+}
+
+button {
+    padding: 20px;
+    margin: 20px;
+}
+
+#root {
+    background-color: gray;
+    width: fit-content;
+}
